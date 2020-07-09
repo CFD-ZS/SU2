@@ -2,14 +2,14 @@
  * \file CMultiGridGeometry.hpp
  * \brief Headers of the multigrid geometry class.
  * \author F. Palacios, T. Economon
- * \version 7.0.1 "Blackbird"
+ * \version 7.0.6 "Blackbird"
  *
  * SU2 Project Website: https://su2code.github.io
  *
  * The SU2 Project is maintained by the SU2 Foundation
  * (http://su2foundation.org)
  *
- * Copyright 2012-2019, SU2 Contributors (cf. AUTHORS.md)
+ * Copyright 2012-2020, SU2 Contributors (cf. AUTHORS.md)
  *
  * SU2 is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -53,11 +53,6 @@ public:
    * \param[in] iZone - Current zone in the mesh.
    */
   CMultiGridGeometry(CGeometry **geometry, CConfig *config_container, unsigned short iMesh);
-
-  /*!
-   * \brief Destructor of the class.
-   */
-  ~CMultiGridGeometry(void);
 
   /*!
    * \brief Determine if a CVPoint van be agglomerated, if it have the same marker point as the seed.
